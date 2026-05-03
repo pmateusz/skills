@@ -1,0 +1,11 @@
+{
+  "name": "pmateusz-skills",
+  "skills": [
+    "./bound-tool-output",
+    "./code-review",
+    "./gh-cli",
+    "./git-hygiene",
+    "./glab-cli",
+    "./python-edit"
+  ]
+}
