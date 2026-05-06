@@ -20,5 +20,8 @@ Or globally: `npx skills@latest add pmateusz/skills -g`.
 | `glab-cli` | knowledge | `glab` CLI patterns for MRs, discussions, pipelines. |
 | `bound-tool-output` | knowledge | Cap output from Bash, search, and file-read tools to preserve context. |
 | `python-edit` | knowledge | AST-validate `.py` files after Edit/Write. |
+| `careful-planning` | knowledge | Verified implementation plans to `./plans/<slug>.md`; deep symbol exploration; LSP probe; confirmation gate before coding. |
+| `write-a-prd` | knowledge | Interview + codebase exploration to produce a PRD; saved to `./prds/<slug>.md` (no GitHub issue). |
+| `pi-mono-bug-repro` | knowledge | Turn pi-mono jsonl session(s) into a failing kimchi terminal-bench task that reproduces a coding-harness bug for red-green TDD. |
 
 Knowledge skills load automatically when their description matches the task. `code-review` is invoked explicitly.
