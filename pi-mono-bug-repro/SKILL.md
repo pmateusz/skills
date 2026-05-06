@@ -1,13 +1,13 @@
 ---
 name: pi-mono-bug-repro
-description: Build a failing terminal-bench task that reproduces a coding-harness bug observed in pi-mono jsonl session(s). Analyzes whole sessions (parent + subagents via parentSession) for anomalies, then emits a kimchi-style task under ./tasks/<slug>/ for red-green TDD harness fixes. Use when user wants to reproduce harness bugs from pi-mono transcripts, turn jsonl sessions into terminal-bench tasks, or build red-green tests for kimchi-code/coding-agent regressions.
+description: Build a failing terminal-bench task that reproduces a coding-harness bug observed in pi-mono jsonl session(s). Analyzes whole sessions (parent + subagents via parentSession) for anomalies, then emits a task under ./tasks/<slug>/ for red-green TDD harness fixes. Use when user wants to reproduce harness bugs from pi-mono transcripts, turn jsonl sessions into terminal-bench tasks, or build red-green tests for kimchi-code/coding-agent regressions.
 ---
 
 # pi-mono-bug-repro
 
 Turn pi-mono session jsonl(s) into a failing kimchi terminal-bench task that reproduces an observed harness bug. Output: `./tasks/<slug>/` (override on request).
 
-Reference task layout: `castai/kimchi-dev` PR #140 (`benchmark/terminal-bench-smoke/tasks/*`).
+Reference task layout: `castai/kimchi-dev` (`benchmark/terminal-bench-smoke/tasks/*`).
 
 ## Workflow
 
@@ -48,7 +48,7 @@ Create under `./tasks/<slug>/`:
 tasks/<slug>/
 ├── environment/Dockerfile
 ├── instruction.md          # abstract — coding/research task only, no transcript leak
-├── task.toml               # kimchi shape (PR 140), adapt per bug
+├── task.toml               # adapt per bug
 └── tests/
     ├── test.sh
     ├── test_<slug>.py      # end-state asserts and/or transcript-jsonl inspection
