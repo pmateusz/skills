@@ -3,9 +3,11 @@
   "skills": [
     "./bound-tool-output",
     "./code-review",
+    "./compare-prd-implementations",
     "./gh-cli",
     "./git-hygiene",
     "./glab-cli",
+    "./prd-to-ferment",
     "./python-edit"
   ]
 }

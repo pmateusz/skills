@@ -22,6 +22,8 @@ Or globally: `npx skills@latest add pmateusz/skills -g`.
 | `python-edit` | knowledge | AST-validate `.py` files after Edit/Write. |
 | `careful-planning` | knowledge | Verified implementation plans to `./plans/<slug>.md`; deep symbol exploration; LSP probe; confirmation gate before coding. |
 | `write-a-prd` | knowledge | Interview + codebase exploration to produce a PRD; saved to `./prds/<slug>.md` (no GitHub issue). |
+| `prd-to-ferment` | user-invocable | Reframe a PRD into answers to four discovery questions (build, goal, success criteria, non-negotiables) without losing info. |
+| `compare-prd-implementations` | user-invocable | Independently review two branches/PRs implementing the same PRD; produces a scored, file:line-cited markdown report. |
 | `pi-mono-bug-repro` | knowledge | Turn pi-mono jsonl session(s) into a failing kimchi terminal-bench task that reproduces a coding-harness bug for red-green TDD. |
 
 Knowledge skills load automatically when their description matches the task. `code-review` is invoked explicitly.
